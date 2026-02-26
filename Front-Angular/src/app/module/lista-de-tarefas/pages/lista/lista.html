@@ -1,0 +1,42 @@
+
+ @if(tarefas().length === 0){
+<div class="container">
+   
+    <img 
+    src="assets/img/logo.png" 
+    alt="Logo"
+    loading="eager"
+    >
+
+    @if(addItem()){
+        <button class="btn btn-primario" (click)="addItem.set(false)">
+            Criar uma lista de tarefas
+        </button>
+    } @else{
+        <app-input-add-item
+            [inputListItems]="tarefas()"
+            (outputAddListItens)="getInputAddItem($event)">
+        </app-input-add-item>
+    }
+
+</div>
+} @else{
+    <app-input-add-item
+        [inputListItems]="tarefas()"
+        (outputAddListItens)="getInputAddItem($event)">
+    </app-input-add-item>
+
+    <main class="container">
+        
+        <h2>Pendências</h2>
+        <app-input-list-item [inputListItem]="pendentes" (outputStatus)="statusTarefa($event)" (outputDelete)="deletar($event)" (outputEdit)="editarNome($event)"></app-input-list-item>
+        
+        <h2>Concluidas</h2>
+        <app-input-list-item [inputListItem]="concluidas" (outputStatus)="statusTarefa($event)" (outputDelete)="deletar($event)" (outputEdit)="editarNome($event)"></app-input-list-item>
+    </main>
+
+    <footer>
+        <button class="btn btn-danger" (click)="deletarTodosOsItens()">Deletar todos os Itens</button>
+    </footer>
+}
+

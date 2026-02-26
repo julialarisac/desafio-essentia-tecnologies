@@ -1,0 +1,61 @@
+:host{
+    width: 100%;
+}
+
+label.input-label-text{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+    background: var(--preto-010);
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+label.input-label-text input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--branco);
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+
+label.input-label-text input[type="checkbox"]:checked{
+    background-color: var(--primaria);
+    border-color: var(--primaria);
+}
+
+label.input-label-text input[type="checkbox"]:checked::after{
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    
+}
+
+label.input-label-text input[type="text"]{
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 36px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: none;
+    background: none;
+    color: var(--branco);
+}
+
+
+/* rely on global .btn styles for circular buttons (no overrides needed) */
+
+:host { 
+    max-width: 720px; 
+}

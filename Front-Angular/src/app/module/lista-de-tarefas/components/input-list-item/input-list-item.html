@@ -1,0 +1,19 @@
+@for(item of inputListItem; track item.id) {
+  <label class="input-label-text">
+    <input 
+   
+    type="checkbox"
+      [checked]="item.checked"
+      (change)="outputStatus.emit(item)">
+    <input 
+      type="text"
+      #inputValue
+      [id]="item.id"
+      [value]="item.nomeLista"
+      placeholder="Adicione um valor"
+      (blur)="onEdit(item, $event.target.value)"
+      (keyup.enter)="onEdit(item, $event.target.value)"
+    >
+    <button class="btn btn-danger-circulo" title="Delete este item" (click)="outputDelete.emit(item.id)"></button>
+  </label>
+}

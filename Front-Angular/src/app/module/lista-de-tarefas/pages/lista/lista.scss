@@ -1,0 +1,54 @@
+:host{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .btn-primario, app-input-add-item, img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    }
+
+    main.container{
+        max-height: calc(100% - 260px);
+        width: 100%;
+        max-width: 720px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+
+        &::-webkit-scrollbar{
+            width: 4px;
+        }
+        &::-webkit-scrollbar-track{
+            background: var(--preto-010);
+        }
+        &::-webkit-scrollbar-thumb{
+            background: var(--primaria);
+            border-radius: 5px;
+        }
+    }
+
+    footer{
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid var(--preto-010);
+
+    }
+
+}
+
