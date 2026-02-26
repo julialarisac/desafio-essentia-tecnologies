@@ -13,7 +13,7 @@ Se tivesse mais tempo eu não faria os alerts, usaria modals. Faria mais valida�
 
 De qualquer forma, me diverti bastante fazendo o desafio, espero que gostem!
 
-Ps: Sei que não sou muito boa criando nome de variavel, comecei com o português e do nada ia pro inglês, fora que fiz o front todo primeiro e depois percebi um erro no ListaItens.interface.ts e tive que tratar para poder ir corretamente pro meu backend.
+Ps: Sei que não sou muito boa criando nome de variavel, comecei com o português e do nada ia pro inglês, fora que fiz o front todo primeiro e depois percebi um erro no ListaItens.interface.ts e tive que tratar para poder ir corretamente para o meu backend.
 
 ## Como instalar o projeto Angular:
 
