@@ -2,7 +2,7 @@
 
 Esse desafio me fez perceber como eu gosto de programar. 
 
-    Não tenho experencia com node, já tinha visto algumas coisas em cursos, mas nunca tinha feito um projeto. 
+Não tenho experencia com node, já tinha visto algumas coisas em cursos, mas nunca tinha feito um projeto. 
 Segui vários vídeos no youtube de como fazer a integração (incrivelmente não existe 1 com angular) então fiz de uma maneira que julguei ser a mais correta com base no que vi, pode ser que para vocês não faça muito sentido, mas para mim fez.
 Não me arrisquei fazendo várias funcionalidades pois eu só tinha tempo para fazer de noite, então fiz algo simples mas funcional. Pensei em todos os casos que poderia dar erro, que o usuário pudesse fazer errado e tentei contornar.
 A parte do angular e do MySQL foi mais fácil para mim, já trabalhei com os dois quando era estágiaria, o desafio mesmo foi me adaptar a nova versão do angular, trabalhei por muito tempo com a versão 11, devo admitir que gostei bastante de como ele está agora.
